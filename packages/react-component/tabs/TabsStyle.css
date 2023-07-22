@@ -1,0 +1,106 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.containerTest {
+  color: black;
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+}
+
+.bloc-tabs {
+  display: flex;
+  flex: 1;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  background: rgba(128, 128, 128, 0.075);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+
+.active-tabs {
+  border: none;
+  background: white;
+  border-bottom: 5px solid rgb(88, 147, 241);
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+}
+
+.content {
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  display: flex;
+}
+
+td {
+  width: 100%;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tbody {
+  width: 100%;
+  display: flex;
+  flex-direction: column ;
+}
+
+.disconnect-btn {
+  position: fixed;
+  width: 10%;
+  height: 10%;
+  left: 0.5%;
+  bottom: 0.5%;
+  background-color: white;
+  border: 3px solid rgb(88, 147, 241);
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.disconnect-btn:hover {
+  background-color: rgb(81, 133, 216);
+  color: white;
+}
+
+.link {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.info-btn {
+  background-color: white;
+}

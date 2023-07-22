@@ -1,0 +1,61 @@
+.btn-delete,
+.btn-edit {
+  cursor: pointer;
+  padding: 1% 0.5% 1% 0.5%;
+  background-color: white;
+  border: none;
+}
+
+.btn-delete-disabled,
+.btn-edit-disabled {
+  border: none;
+  color: gray;
+  opacity: 0.5;
+  padding: 1% 0.5% 1% 0.5%;
+  background-color: white;
+}
+
+.btn-add {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font: bold;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.input-modify,
+.input-add {
+  width: 100%;
+  height: 100%;
+}
+
+.input-checkbox {
+  cursor: pointer;
+}
+
+.input-checkbox-disabled,
+.input-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.input-checkbox-disabled {
+  cursor: auto;
+}
+
+.show-add-row {
+  visibility: visible;
+}
+
+.dont-show-add-row {
+  visibility: hidden;
+}
+
+.price-header {
+  cursor: pointer;
+}
